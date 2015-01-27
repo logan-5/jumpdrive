@@ -161,7 +161,7 @@ Game.draw = function() {
 							 scrollTextCounter += preLevelScrollSpeed;
 						}
 						
-                        ctx.fillText(outputString, 20, SCREEN_SIZE_Y/4 + 20);
+						wrapText(ctx, outputString, 20, SCREEN_SIZE_Y/4 + 20, SCREEN_SIZE_X-20, 18);
                         break;
                 case 2:                 
                 case 1:
@@ -227,7 +227,7 @@ Game.draw = function() {
 							 scrollTextCounter += postLevelScrollSpeed;
 						}
 						
-                        ctx.fillText(outputString, 20, SCREEN_SIZE_Y/4 + 20);
+						wrapText(ctx, outputString, 20, SCREEN_SIZE_Y/4 + 20, SCREEN_SIZE_X-20, 18);
                         break;
                   case 4:
                         // very end of game, scroll through victory message(s)
@@ -250,7 +250,7 @@ Game.draw = function() {
 							 scrollTextCounter += egScrollSpeed;
 						}
 						
-                        ctx.fillText(outputString, 20, SCREEN_SIZE_Y/4 + 20);
+						wrapText(ctx, outputString, 20, SCREEN_SIZE_Y/4 + 20, SCREEN_SIZE_X-20, 18);
                   break;
         }
 }

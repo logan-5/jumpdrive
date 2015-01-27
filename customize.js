@@ -20,8 +20,8 @@ Game.input = null; // store user input for the next frame
 Game.fps = 60;  // how often will we refresh the screen?
 var LTIME = 0; // this variable will always store the time of the last frame cycle
 var TEMP_TIME = 0; // do not use
-var SCREEN_SIZE_X = 800; // canvas size in pixels
-var SCREEN_SIZE_Y = 600;
+var SCREEN_SIZE_X = window.screen.width; // canvas size in pixels
+var SCREEN_SIZE_Y = window.screen.height;
 var CANVAS_X;  // get and store the upper left corner of the canvas's coordinates
 var CANVAS_Y;
 var MIN_CIRCLE_SIZE = 12; // smallest circle (often used with *2 because diameter)
