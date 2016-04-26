@@ -132,7 +132,6 @@ function handleCollisions(entity, collisionList) {
 			entity.act();
 		}
 		if(collisionList[i].id === "Top Boundary" || collisionList[i].id === "Bottom Boundary") {
-			// couldn't figure it out, tried this on a whim, it worked
 			entity.angle = -1* entity.angle;
 			entity.act();
 		}

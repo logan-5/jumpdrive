@@ -40,7 +40,6 @@ Atom.prototype.act = function() {
 		return 1;
 	}
 	if(this.expanded === 1) { 
-		//player_Score+++++amillion etc
 		if(this.life >= this.lifespan) // kill if dead
 			return -1;
 		this.life++; 
@@ -57,15 +56,6 @@ Atom.prototype.bounce = function() {
 };
 
 Atom.prototype.move = function() {
-	// TODO: move the below into the collision engine
-    /*if(this.distanceFrom(0, this.y) <= this.radius) // left side
-	this.bounce();
-    if(this.distanceFrom(this.x, 0) <= this.radius) // top
-	this.bounce();
-    if(this.distanceFrom(SCREEN_SIZE_X, this.y) <= this.radius) // right side
-	this.bounce();
-    if(this.distanceFrom(this.x, SCREEN_SIZE_Y) <= this.radius)
-	this.bounce();*/
 	// Math.trig functions use radians, so:
 	var radAngle = this.angle * (Math.PI / 180);
 	

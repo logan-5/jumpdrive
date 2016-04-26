@@ -19,7 +19,7 @@ function drawCollisionLines(context) {
 	}
 }
 
-// copied and pasted from javascripter.net
+// thanks to javascripter.net
 function hexToR(h) {return parseInt((cutHex(h)).substring(0,2),16)}
 function hexToG(h) {return parseInt((cutHex(h)).substring(2,4),16)}
 function hexToB(h) {return parseInt((cutHex(h)).substring(4,6),16)}
@@ -63,8 +63,7 @@ function getBackgroundColor() {
 	return currentBackgroundColor;
 }
 
-// copied from stackoverflow
-// maybe could have done it myself but really didn't wanna
+// thanks to
 // http: //www.html5canvastutorials.com/tutorials/html5-canvas-wrap-text-tutorial/
      function wrapText(context, text, x, y, maxWidth, lineHeight) {
         var cars = text.split("\n");
